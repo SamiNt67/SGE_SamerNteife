@@ -1,0 +1,405 @@
+    :root {
+
+        --ne: #333333;
+
+
+        --mo: #3c20b9;
+        --bl: #ffffff;
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+        color: var(--ne);
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    header {
+        background-color: var(--bl);
+        box-shadow: 0 2px 4px black;
+
+        z-index: 100;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 6px;
+    }
+
+    .logo {
+        font-size: 26px;
+        font-weight: bold;
+        color: var(--ne);
+        text-decoration: none;
+    }
+
+    .enlaces {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        width: 60%;
+
+    }
+
+    .enlaces a {
+        text-decoration: none;
+        color: var(--ne);
+        font-weight: bold;
+        transition: color 0.6s;
+    }
+
+    .enlaces a:hover {
+        color: var(--mo);
+    }
+
+
+    .pri {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 40px;
+
+        height: 100%;
+        width: 100%;
+
+
+
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        background-image: url(/img/martin-martz-X5fEKadz0Xc-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    @media (min-width: 768px) {
+        .pri {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .divimg {
+        width: 100%;
+        height: 100%;
+        min-height: 1000px;
+        object-fit: cover;
+        background-image: url(/img/alesia-kazantceva-XLm6-fPwK5Q-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 16px;
+    }
+
+
+    .con {
+        padding: 60px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .con h1 {
+
+        font-size: 72px;
+        margin-bottom: 100px;
+
+        color: #ffffffb6;
+    }
+
+    .con p {
+        display: inline-block;
+        background-color: var(--bl);
+        padding: 16px;
+        border-radius: 16px;
+        font-size: 30px;
+        color: #4b5563;
+        margin-bottom: 60px;
+    }
+
+    .bot {
+
+        background-color: var(--mo);
+        color: white;
+        padding: 16px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.6s;
+    }
+
+    .bot:hover {
+        background-color: #4338ca;
+    }
+
+
+    footer {
+        background-color: var(--mo);
+        color: var(--bl);
+        text-align: center;
+        padding: 20px;
+        font-size: 17px;
+    }
+
+    /*Mas info página*/
+    .cardiv {
+        position: relative;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .carrusel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    .objeto {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .objeto img {
+        width: 100%;
+        display: block;
+    }
+
+    .botcar {
+        position: absolute;
+        top: 10%;
+
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+
+        padding: 16px;
+
+        font-size: 18px;
+    }
+
+    .botcar.atras {
+        left: 10px;
+
+    }
+
+    .botcar.adelante {
+        right: 10px;
+    }
+
+    .pri2 h1 {
+        color: var(--mo);
+        text-align: center;
+
+    }
+
+    .pri2 h2 {
+        color: var(--bl)
+    }
+
+    .caracteristicas {
+        background-color: #ffffffe7;
+        border-radius: 16px;
+        padding: 36px;
+        margin: 36px;
+    }
+
+
+    /* Página Odoo*/
+    .adm {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    
+    .tarjeta {
+        background: rgba(255, 255, 255, 0.855);
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+
+    
+    .fondo {
+       height: 100px;
+       
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+        margin-bottom: 10px;
+       
+    }
+
+   
+    .ima1 {
+        background-image: url('/img/Captura de pantalla 2026-05-22 a las 9.47.19.png');
+    }
+
+    .ima2 {
+        background-image: url('/img/Captura de pantalla 2026-05-22 a las 9.47.29.png');
+    }
+
+    .ima3 {
+        height: 200px;
+        background-image: url('/img/Captura de pantalla 2026-05-22 a las 9.47.47.png');
+    }
+
+    .ima4 {
+        height: 300px;
+        background-image: url('/img/Captura de pantalla 2026-05-22 a las 9.48.06.png');
+    }
+
+    .ima5 {
+       height: 200px;
+        background-image: url('/img/Captura de pantalla 2026-05-22 a las 9.48.29.png');
+    }
+
+    .ima6 {
+        height: 500px;
+        background-image: url('/img/Captura de pantalla 2026-05-22 a las 9.49.02.png');
+    } 
+    video{
+            max-width: 990px;
+        }
+
+        .img1 { background-image: url('/img/Captura de pantalla 2026-05-22 a las 9.47.19.png'); }
+        .img2 { background-image: url('/img/Captura de pantalla 2026-05-22 a las 9.47.29.png'); }
+        .img3 { background-image: url('/img/Captura de pantalla 2026-05-22 a las 9.47.47.png'); }
+        .img4 { background-image: url('/img/Captura de pantalla 2026-05-22 a las 9.48.06.png'); }
+        .img5 { background-image: url('/img/Captura de pantalla 2026-05-22 a las 9.48.29.png'); }
+        .img6 { background-image: url('/img/Captura de pantalla 2026-05-22 a las 9.49.02.png'); }
+        .img7 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 8.10.34.png');
+        background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img8 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 8.11.02.png');
+        background-size: contain;
+    background-repeat: no-repeat;
+background-position: center;  }
+        .img9 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 8.11.42.png');background-size: contain;
+    background-repeat: no-repeat;
+background-position: center;  }
+        .img10 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 8.12.02.png');background-size: contain;
+    background-repeat: no-repeat;
+background-position: center;  }
+        .img11 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 8.13.16.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img12 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 9.23.54.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img13 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 9.25.18.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img14 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 9.26.19.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img15 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 9.31.56.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img16 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 9.32.13.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img17 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 9.32.32.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img18 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 9.33.23.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img19 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 9.59.58.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img20 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 10.00.15.png');background-size: contain;
+    background-repeat: no-repeat;
+background-position: center;  }
+        .img21 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 10.00.36.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img22 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 10.00.46.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img23 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 10.09.34.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img24 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 10.10.12.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img25 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 10.17.50.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img26 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 10.18.33.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img27 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 10.18.49.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .img28 { background-image: url('/img/Captura de pantalla 2026-05-25 a las 10.23.58.png'); background-size: contain;
+    background-repeat: no-repeat;
+background-position: center; }
+        .imagenc{
+            height: 600px;
+            
+        }
+    /*Hamburguesa*/
+  
+.bothamburguesa {
+    display: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .bothamburguesa {
+        display: block; 
+        font-size: 28px;
+       
+      
+    }
+
+    #menu {
+       
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        width: 50%;
+        background-color:var(--mo);
+        flex-direction: column;
+        padding: 16px;
+        opacity: 1; 
+        transition: opacity 1s; 
+    }
+
+    #menu ul {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #menu a {
+        color: white;
+        
+    }
+     #menu a:hover {
+        color: rgb(111, 0, 255);
+        
+    }
+}

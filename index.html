@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info sobre SGE</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header>
+        <button class="bothamburguesa" onclick="ocultaMenu()">+</button>
+        <nav id="menu">
+            <a href="#" class="logo">InfoSGE</a>
+            <ul class="enlaces">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="MasInfo.html">Mas info</a></li>
+                <li><a href="odoo.html">Odoo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pri">
+       
+            <div class="divimg">
+            
+            </div>
+            <div class="con">
+                <h1>¿Qué son los SGE?</h1>
+                <p>Un sistema de gestión empresarial (SGE) se puede definir como un conjunto de herramientas que a las empresas les es muy útil para llevar a cabo ciertos procesos y actividades cotidianas. Con estos podemos mezclar soluciones de distintas áreas del negocio, como son la contabilidad, la gestión de inventarios, la atención al cliente y las ventas, en un único sistema. 
+
+
+En resumen los SGE se usan para automatizar tareas cotidianas y repetitivas de la empresa para así reducir errores y también proporcionar información recopilada de estos procesos, para así poder ser de ayuda en decisiones de la empresa. 
+</p>
+                <a href="MasInfo.html" class="bot">¿Quieres saber más? (obvio que sí, pulsame)</a>
+            </div>
+      
+    </main>
+
+    <footer>
+        <p>&copy; 2026 InfoSGE. Todos los derechos reservados para mí. Diseñado por Samer Nteife</p>
+    </footer>
+<script>
+let oculto = false;
+function ocultaMenu() {
+    let menu = document.getElementById("menu");
+    if (oculto) {
+        menu.style.opacity = 1;
+    } else {
+        menu.style.opacity = 0;
+    }
+    oculto = !oculto;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odoo</title>
+     <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+         <button class="bothamburguesa" onclick="ocultaMenu()">+</button>
+        <nav id="menu">
+            <a href="#" class="logo">InfoSGE</a>
+            <ul class="enlaces">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="MasInfo.html">Mas info</a></li>
+                <li><a href="#">Odoo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="pri2">
+        <h1>Este es un tutorial de instalación de ubuntu mediante docker-compose</h1>
+<div class="cardiv"> <!--PD: es más sencillo y rápido hacer un carrusel con una librería como bootstrap (esto es lo que he hecho en las prácticas).-->
+    <div class="carrusel" id="carrusel">
+        <div class="objeto"><img src="/img/actualizarubuntu.png" alt=""><h1>Paso 1</h1><h2> Actualizar los paquetes de ubuntu
+</h2></div>
+        <div class="objeto"><img src="/img/dependencias.png" alt=""><h1>Paso 2</h1><h2> Instalar las dependencias necesarias para Docker y Odoo
+</h2></div>
+ <div class="objeto"><img src="/img/claveoficialdeDocker.png" alt=""><h1>Paso 3</h1><h2> Añadir la clave oficial de Docker
+</h2></div>
+  <div class="objeto"><img src="/img/AñadirRepositorio.png" alt=""><h1>Paso 4</h1><h2> Añadir el repositorio
+</h2></div>
+        <div class="objeto"><img src="/img/instalamosdockerr.png" alt=""><h1>Paso 5</h1><h2> Instalar Docker
+</h2></div>
+ <div class="objeto"><img src="/img/comprobamos.png" alt=""><h1>Paso 6</h1><h2> Comprobamos que se haya llevado a cabo la instalación
+</h2></div>
+<div class="objeto"><img src="/img/creamos un proyecto.png" alt=""><h1>Paso 7</h1><h2> Creamos el proyecto Odoo y nos movemos a esa dirección
+</h2></div>
+        <div class="objeto"><img src="/img/yaml.png" alt=""><img src="/img/creamos el docker yaml.png" alt=""><h1>Paso 8</h1><h2> Crear docker-compose.yml y lo editamos
+</h2></div>
+ <div class="objeto"><img src="/img/levantamo.png" alt=""><h1>Paso 9</h1><h2> Levantamos el Odoo y accedemos a la dirección http://localhost:8069 
+</h2></div>
+    </div>
+   
+    
+    
+    <button class="botcar atras" onclick="retroceder()"><</button>
+    <button class="botcar adelante" onclick="avanzar()">></button>
+  
+<h1>Administración y configuración de Odoo</h1>
+<div class="adm">
+
+        <div class="tarjeta">
+            <div class="fondo ima1"></div>
+            <p>El primer apartado de administración que presento es el de invitación y gestión de usuarios. En este se puede gestionar facilmente quien entra al sistema y que permisos tiene cada uno.  </p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="fondo ima2"></div>
+            <p>Una configuración bastante sencilla pero, sin duda, más que escencial: la adición de idiomas.</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="fondo ima3"></div>
+            <p>En la imágen muestro la administración general de la empresa y diseño de documentos exportables.</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="fondo ima4"></div>
+            <p>Cuando en la anterior administración pulsamos en "actualizar información" accedemos a una de las configuraciones más importantes: las de la empresa misma que requiere el SGE.</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="fondo ima5"></div>
+            <p>Para una correcta administración del SGE conviene activar el modo desarrollador, dando así acceso a administración de usuarios, instalación y configuración de módulos, etc.</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="fondo ima6"></div>
+            <p>Tenemos un apartado llamado "Apps" en Odoo, este nos muestra todos los módulos que podemos instalar, las cuales podemos usar para administraciones más especificas. Yo he instalado "Ventas" con el cual puedo administrar productos y realizar informes. Y facturación, con el que puedo crear y administrar facturas y clientes.</p>
+        </div>
+
+    </div>
+      <h1>Elaborar informes y exportar la información</h1>
+        <h2 class="seccion-titulo">Elaborar informes</h2>
+        <div class="mi-grid">
+
+            <div class="tarjeta">
+               
+                <div class="imagenc img7"></div>
+                <h3>Paso 1</h3>
+                <p>Nos dirigimos al módulo de ventas que anteriormente he mencionado</p>
+            </div>
+
+            <div class="tarjeta">
+                
+                <div class="imagenc img13"></div>
+                <h3>Paso 2</h3>
+                <p>En el apartado "reportes" podemos decidir de qué queremos el informe.</p>
+            </div>
+
+            <div class="tarjeta">
+              
+                <div class="imagenc "><video src="/img/Grabación de pantalla 2026-05-25 a las 9.28.14.mp4" controls></video></div>
+                <h3>Paso 3</h3>
+                <p>Podemos decidir el formato de gráfica(o tabla) y filtrar la información. Esto se muestra con más detalle en el video superior.</p>
+            </div>
+<h2 class="seccion-titulo">exportar información</h2>
+            <div class="tarjeta">
+                
+                <div class="imagenc img15"></div>
+                <h3>Paso 1</h3>
+                <p>
+                    Nos dirigimos al apartado del que queramos exportar información, en mi caso el de productos.
+                </p>
+            </div>
+            
+
+            <div class="tarjeta">
+           
+                <div class="imagenc img16"></div>
+                <h3>Paso 2</h3>
+                <p>
+                    Poner en el modo "lista" y seleccionar los productos referentes que queramos exportar.
+            </div> 
+
+            <div class="tarjeta">
+               
+                <div class="imagenc img17"></div>
+                <h3>Paso 3</h3>
+                <p>Arriba en acciones podemos realiyar la exportación.</p>
+            </div>
+
+            <div class="tarjeta">
+                
+                <div class="imagenc img18"></div>
+                <h3>Paso 4</h3>
+                <p>El paso anterior lleva a esta pantalla de configuración donde cabe resaltar que podemos exportarlo tanto en XLSX como CSV. </p>
+            </div>
+<h1 >Acceso seguro a la información en el SGE. Roles y privilegios.</h1>
+          
+            
+            <div class="tarjeta">
+                
+                <div class="imagenc img21"></div>
+                <h3>Asignación de rolesen ventas</h3>
+                 <p>PD: para llegar aquí nos dirigimos a ajustes/usuarios/administración de usuarios</p>
+            </div>
+
+            <div class="tarjeta">
+                
+                <div class="imagenc img22"></div>
+               <h3>Asignación de roles en contabilidad</h3>
+              
+            </div>
+
+
+          
+
+            <div class="tarjeta">
+              
+                <div class="imagenc img25"></div>
+                <h3>Nos dirigimos a los permisos de grupo</h3>
+                
+            </div>
+
+            <div class="tarjeta">
+                
+                <div class="imagenc img26"></div>
+                <h3>Elegimos grupo</h3>
+               
+            </div>
+
+            <div class="tarjeta">
+                
+                <div class="imagenc img27"></div>
+                <h3>Nos dirigimos al apartado de permisos de acceso</h3>
+               
+            </div>
+
+            <div class="tarjeta">
+                
+                <div class="imagenc img28"></div>
+                <h3>Aquí podemos ver los permisos asignados a este grupo</h3>
+                
+            </div>
+
+        </div>
+    </main>
+     <footer>
+        <p>&copy; 2026 InfoSGE. Todos los derechos reservados para mí. Diseñado por Samer Nteife</p>
+    </footer>
+    <script>
+        let indiceAct = 0;
+
+function mostrarImagen(indice) {
+    const carrusel = document.getElementById("carrusel");
+    const items = document.querySelectorAll(".objeto");//esto crea un vector con todos las imagenes y textos asociados al objeto
+    
+    if (indice >= items.length) {
+        
+    indiceAct = 0;
+    }
+    if (indice < 0){
+
+     indiceAct = items.length - 1;
+    }
+    const desplazamiento = -indiceAct * 100;
+    carrusel.style.transform = `translateX(${desplazamiento}%)`; /*por lo que he investigado esto sirve para desplazar por el eje x según el porcentaje que se almacene en desplazamiento*/
+}
+
+function avanzar() {
+    indiceAct++;
+    mostrarImagen(indiceAct);
+}
+
+function retroceder() {
+    indiceAct--;
+    mostrarImagen(indiceAct);
+}
+
+let oculto = false;
+function ocultaMenu() {
+    let menu = document.getElementById("menu");
+    if (oculto) {
+        menu.style.opacity = 1;
+    } else {
+        menu.style.opacity = 0;
+    }
+    oculto = !oculto;
+}
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más Info</title>
+     <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+         <button class="bothamburguesa" onclick="ocultaMenu()">+</button>
+        <nav id="menu">
+            <a href="#" class="logo">InfoSGE</a>
+            <ul class="enlaces">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Mas info</a></li>
+                <li><a href="odoo.html">Odoo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="pri2">
+        <h1>Existen varios tipos de SGE</h1>
+<div class="cardiv"> <!--PD: es más sencillo y rápido hacer un carrusel con una librería como bootstrap (esto es lo que he hecho en las prácticas).-->
+    <div class="carrusel" id="carrusel">
+        <div class="objeto"><img src="/img/vagaro-LSOIjuBiIuQ-unsplash.jpg" alt=""><h1>Customer Relationship Management (CRM)</h1><h2> En resumen, esta tecnología está pensada para gestionar todas las interacciones de una empresa con clientes.
+</h2></div>
+        <div class="objeto"><img src="/img/microsoft-edge-1N49Cn7P0Fg-unsplash.jpg" alt=""><h1>Enterprise Resource Planning (ERP)</h1><h2> Se usa para la gestión integral de la empresa, esto se ve aplicado como que centraliza y automatiza los procesos más importantes de una empresa. 
+</h2></div>
+        <div class="objeto"><img src="/img/adeolu-eletu-E7RLgUjjazc-unsplash.jpg" alt=""><h1>Business Performance Management (BPM)</h1><h2> Es aquello que usa una empresa para medir, monitorizar y gestionar su rendimiento general para cumplir con los objetivos de la organización.
+</h2></div>
+ <div class="objeto"><img src="img/andy-li-CpsTAUPoScw-unsplash.jpg" alt=""><h1>Supplier Relationship Management (SRM)</h1><h2> Se usa para la gestiónde los proveedores que le suministran bienes, materiales y servicios a una empresa.
+</h2></div>
+    </div>
+   
+    
+    
+    <button class="botcar atras" onclick="retroceder()"><</button>
+    <button class="botcar adelante" onclick="avanzar()">></button>
+    <div class="caracteristicas"><h1>Características clave de los SGE</h1>
+    <ul>
+        <li><h2>Integración de procesos</h2> <h3>Un SGE debe dar soluciones a distintas áreas del negocio, como son la contabilidad, la gestión de inventarios, la atención al cliente y las ventas, en un único sistema. 
+             Con un integración así se desea mejorar la toma de decisiones de la empresa y la sincronización de los flujos de trabajo entre departamentos.
+
+        </h3></li>
+        <li><h2>Escalabilidad</h2> <h3>Los SGE tienen que tener en cuenta que las empresas pueden estar en continúo crecimiento, por ello estos deben poder ser escalables junto a ella: poder ser capaz de añadir nuevas funcionalidades y adaptarse fácilmente a las nuevas necesidades del negocio.</h3></li>
+        <li><h2>Automatización de procesos</h2> <h3>La automatización de procesos repetitivos reduce el margen de error y ahorra mucho tiempo a la empresa. Esto otorga una mucho mayor productividad a la empresa.</h3></li>
+        <li><h2>Seguridad de la información y protección de datos</h2> <h3>Los datos de una empresa pueden ser muy sensibles, por ello que estos se encuentren bien protegidos es muy relevante.  El SGE debe garantizar el cumplimiento de normativas locales e internacionales sobre la protección de datos y la privacidad.</h3></li>
+        <li><h2>Personalización y adaptabilidad</h2> <h3>Un SGE debe poder usarse en varias empresas sin problemas por lo que debe poder ser adaptable y personalizable a todas ellas. Se debe poder ajustar tanto funcionalidades como flujos de trabajo a las necesidades específicas de la empresa.
+</h3></li>
+    </ul></div>
+
+</div>
+
+    </main>
+     <footer>
+        <p>&copy; 2026 InfoSGE. Todos los derechos reservados para mí. Diseñado por Samer Nteife</p>
+    </footer>
+    <script>
+        let indiceActual = 0;
+
+function mostrarImagen(indice) {
+    const carrusel = document.getElementById("carrusel");
+    const items = document.querySelectorAll(".objeto");//esto crea un vector con todos las imagenes y textos asociados al objeto
+    
+    if (indice >= items.length) {
+        
+    indiceActual = 0;
+    }
+    if (indice < 0){
+
+     indiceActual = items.length - 1;
+    }
+    const desplazamiento = -indiceActual * 100;
+    carrusel.style.transform = `translateX(${desplazamiento}%)`; /*por lo que he investigado esto sirve para desplazar por el eje x según el porcentaje que se almacene en desplazamiento*/
+}
+
+function avanzar() {
+    indiceActual++;
+    mostrarImagen(indiceActual);
+}
+
+function retroceder() {
+    indiceActual--;
+    mostrarImagen(indiceActual);
+}
+
+let oculto = false;
+function ocultaMenu() {
+    let menu = document.getElementById("menu");
+    if (oculto) {
+        menu.style.opacity = 1;
+    } else {
+        menu.style.opacity = 0;
+    }
+    oculto = !oculto;
+}
+
+
+    </script>
+</body>
+</html>
