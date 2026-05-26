@@ -56,7 +56,7 @@
         <p>&copy; 2026 InfoSGE. Todos los derechos reservados para mí. Diseñado por Samer Nteife</p>
     </footer>
     <script>
-        let indiceActual = 0;
+         let indiceAct = 0;
 
 function mostrarImagen(indice) {
     const carrusel = document.getElementById("carrusel");
@@ -64,24 +64,24 @@ function mostrarImagen(indice) {
     
     if (indice >= items.length) {
         
-    indiceActual = 0;
+    indiceAct = 0;
     }
     if (indice < 0){
 
-     indiceActual = items.length - 1;
+     indiceAct = items.length - 1;
     }
-    const desplazamiento = -indiceActual * 100;
+    const desplazamiento = -indiceAct * 100;
     carrusel.style.transform = `translateX(${desplazamiento}%)`; /*por lo que he investigado esto sirve para desplazar por el eje x según el porcentaje que se almacene en desplazamiento*/
 }
 
 function avanzar() {
-    indiceActual++;
-    mostrarImagen(indiceActual);
+    indiceAct++;
+    mostrarImagen(indiceAct);
 }
 
 function retroceder() {
-    indiceActual--;
-    mostrarImagen(indiceActual);
+    indiceAct--;
+    mostrarImagen(indiceAct);
 }
 
 let oculto = false;
